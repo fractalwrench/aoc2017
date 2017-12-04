@@ -13,7 +13,3 @@ fun calculateChecksum(input: String): Int {
             }
             .sumBy { it.last() - it.first() }
 }
-
-class ResourceReader {
-    fun readResource(name: String) = javaClass.classLoader.getResource(name).readText()
-}
